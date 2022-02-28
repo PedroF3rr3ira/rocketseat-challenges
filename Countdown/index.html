@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/top-image.svg" alt="imagem topo">
+    </header>
+
+    <main class="container">
+
+        <section id="counter">
+
+            <h1> ready to launch in...</h1>
+
+            <div class="timerContainer">
+                <div class="blockTimer">
+                    <span>days</span>
+                    <p id="counter-days">08</p>
+                </div>
+                <p>:</p>
+                <div class="blockTimer">
+                    <span>hours</span>
+                    <p id="counter-hours">12</p>
+                </div>
+                <p>:</p>
+                
+                <div class="blockTimer">
+                    <span>minutes</span>
+                    <p id="counter-minutes">44</p>
+                </div>
+                <p>:</p>
+                <div class="blockTimer">
+                    <span>seconds</span>
+                    <p id="counter-seconds">28</p>
+                </div>
+            </div>
+
+            <div id="counter-description">
+                <p>inscreva-se para saber mais sobre o lançamento</p>
+            </div>
+
+            <div class="counter-container"><button onclick="toggleModal()">inscreva-se</button></div>
+
+        </section>
+
+        <section id="container-image">
+            <img src="./images/rocket.svg" alt="foguete">
+        </section>
+
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h2>Edite o lançamento</h2>
+
+            <form action="">
+                <div class="modal-inputContainer">
+                    <div class="modal-blockInput">
+                        <span>days</span>
+                        <p><input id="days" type="number"></p>
+                    </div>
+                    <div class="modal-blockInput">
+                        <span>hours</span>
+                        <p><input id="hours" type="number"></p>
+                    </div>
+                    <div class="modal-blockInput">
+                        <span>minutes</span>
+                        <p><input id="minutes" type="number"></p>
+                    </div>
+                    <div class="modal-blockInput">
+                        <span>seconds</span>
+                        <p><input id="seconds" type="number"></p>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-buttons">
+                <button class="secondary" onclick="toggleModal()">Sair</button>
+                <button class="primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./images/bottom-image.svg" alt="imagem topo">
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
