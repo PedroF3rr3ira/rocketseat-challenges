@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --card-shadow:#18181f;
+}
+body{
+    font-family:"Merriweather Sans", sans-serif;
+    background:var(--body-bg-color);
+    color:var(--text-color);    
+}
+ul{
+    list-style: none;
+}
+.container{
+    display:flex;
+}
+/*------------HEADER*/
+.header{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-around;
+    margin:0 1rem;
+}
+.profile-photo{
+    background:var(--bg-cards);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem 0; 
+    border-radius:.75rem;
+    box-shadow:1px 1px 1px var(--card-shadow);
+}   
+
+.name-profession{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.name-profession p{
+    font-weight: 700;
+    font-size:1.1rem;
+}
+
+.name-profession span{
+    font-size:.73rem;
+}
+
+.photo img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    border:solid 3px rgb(72, 255, 72);
+}
+/*--------------HEADER-INFORMATIONS*/
+
+.informations{
+    background:var(--bg-cards);
+    padding:1rem 1.5rem;
+    border-radius:.75rem;
+    box-shadow: 1px 1px 1px #18181f;
+}
+
+.item-details{
+    padding:.5rem 0;
+    display:flex;
+    align-items:center;
+    font-size:.8rem;
+}
+.item-details img{
+    padding-right:.7rem;
+    width:32px;
+    filter: invert(54%) sepia(26%) saturate(360%) hue-rotate(209deg) brightness(89%) contrast(83%);
+}
+
+.languages{
+    background:var(--bg-cards);
+    padding:1rem;
+    border-radius:.75rem;
+    box-shadow:1px 1px 1px var(--card-shadow)
+}
+
+.languages table{
+    padding:1rem .5rem 0;
+    border-spacing:.5rem .5rem;
+}
+
+.languages table tr td{
+    font-size:.75rem;
+    width:5rem;
+    height:1.1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius:.75rem;
+    background:var(--bg-techs);
+    color:var(--body-bg-color); 
+}
+
+/*---------------DESCRIPTION*/
