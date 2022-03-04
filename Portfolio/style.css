@@ -19,8 +19,16 @@ body{
 ul{
     list-style: none;
 }
+
+a{
+    text-decoration:none;
+    color:var(--text-color);
+    font-size: .9rem;
+}
+
 .container{
     display:flex;
+
 }
 /*------------HEADER*/
 .header{
@@ -108,3 +116,89 @@ ul{
 }
 
 /*---------------DESCRIPTION*/
+
+.description{
+    width:70%;
+    margin:1rem auto;
+}
+
+.my-projects{
+    background:var(--bg-cards);
+    padding:1rem 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    border-radius:.75rem;
+    box-shadow:1px 1px 1px var(--card-shadow);
+}
+
+.wrapRepository{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+}
+
+.card-repository{
+    background:var(--bg-cards);
+    margin:1rem 0;
+    padding:0 1rem;
+    border-radius:.75rem;
+    box-shadow:1px 1px 1px var(--card-shadow);
+}
+
+.card-name{
+    display:flex;
+    align-items: center;
+    gap:1.4rem;  
+    margin:1.5rem 0 1rem;
+}
+.card-repository p{
+    font-size:.8rem;
+}
+.icon{
+    filter: invert(54%) sepia(26%) saturate(360%) hue-rotate(209deg) brightness(89%) contrast(83%);
+    width:16px;
+}
+.icon.folder{
+    width:20px;
+}
+
+.card-details .favorites{
+    padding:1.5rem 0 0;
+    display:flex;
+    gap:1rem;
+}
+.star{
+    display:flex;
+    align-items: center;
+}
+
+.card-details .favorites span{
+    padding:0 .5rem;
+    font-size:.8rem;
+}
+.card-details{
+    display:flex;
+    justify-content: space-between;
+    padding:0 0 .5rem;
+}
+.white-ball{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border: 1px solid lightseagreen;
+    background:rgb(223, 223, 223);
+
+}
+.tecnology{
+    display:flex;
+    gap:.3rem;
+    align-items: flex-end;
+}
+.tecnology span{
+    font-size:.8rem;
+}
+.tecnology-language{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+}
